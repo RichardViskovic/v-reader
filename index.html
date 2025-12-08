@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-book-reader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open sidebar" aria-expanded="false">☰</button>
+    <aside class="sidebar" id="sidebar" aria-label="Upload panel">
+      <div class="sidebar__content">
+        <h2 class="sidebar__title">Library</h2>
+        <p class="sidebar__hint">Upload a .txt file to read. The last file is saved for next time.</p>
+        <label class="file-label" for="file-input">Choose text file</label>
+        <input type="file" id="file-input" accept=".txt,text/plain">
+        <div id="upload-status" class="sidebar__status" aria-live="polite"></div>
+      </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <main class="reader">
+      <div class="text atkinson-hyperlegible-mono-200" id="text-container">
+        <div class="placeholder">Load a text file to start reading.</div>
+      </div>
+      <div class="warning">Your viewscreen must be bigger to view this content.</div>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
+
+
+
