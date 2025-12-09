@@ -106,6 +106,9 @@ body {
   transition: transform 220ms ease-out;
   z-index: 10;
   box-shadow: -12px 0 30px rgba(15, 23, 42, 0.4);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .sidebar--open {
@@ -121,13 +124,13 @@ body {
 
 .sidebar__title {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.2em;
 }
 
 .sidebar__hint {
   margin: 0 0 0.5rem;
   color: #cbd5e1;
-  font-size: 0.95rem;
+  font-size: 0.95em;
 }
 
 .file-label {
@@ -153,7 +156,7 @@ body {
 .sidebar__status {
   min-height: 1.5rem;
   color: #fbbf24;
-  font-size: 0.95rem;
+  font-size: 0.95em;
 }
 
 .overlay {
